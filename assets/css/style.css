@@ -1,0 +1,537 @@
+/* Reset Styles */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+:focus-visible,
+button:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none !important;
+}
+
+/* Register Font Family */
+@font-face {
+    font-family: 'YekanBakh';
+    src: url('../font/yekan-bakh/eot/YekanBakh-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../font/yekan-bakh/eot/YekanBakh-Regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../font/yekan-bakh/woff2/YekanBakh-Regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../font/yekan-bakh/woff/YekanBakh-Regular.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../font/yekan-bakh/ttf/YekanBakh-Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../font/yekan-bakh/svg/YekanBakh-Regular.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'YekanBakh';
+    src: url('../font/yekan-bakh/eot/YekanBakh-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../font/yekan-bakh/eot/YekanBakh-Regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../font/yekan-bakh/woff2/YekanBakh-Regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../font/yekan-bakh/woff/YekanBakh-Regular.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../font/yekan-bakh/ttf/YekanBakh-Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../font/yekan-bakh/svg/YekanBakh-Regular.svg#svgFontName') format('svg');
+    /*Legacy iOS */
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'YekanBakh';
+    src: url('../font/yekan-bakh/eot/YekanBakh-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../font/yekan-bakh/eot/YekanBakh-Regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../font/yekan-bakh/woff2/YekanBakh-Regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../font/yekan-bakh/woff/YekanBakh-Regular.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../font/yekan-bakh/ttf/YekanBakh-Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../font/yekan-bakh/svg/YekanBakh-Regular.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'YekanBakh';
+    src: url('../font/yekan-bakh/eot/YekanBakh-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../font/yekan-bakh/eot/YekanBakh-Regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../font/yekan-bakh/woff2/YekanBakh-Regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../font/yekan-bakh/woff/YekanBakh-Regular.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../font/yekan-bakh/ttf/YekanBakh-Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../font/yekan-bakh/svg/YekanBakh-Regular.svg#svgFontName') format('svg');
+    /*Legacy iOS */
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'YekanBakh';
+    src: url('../font/yekan-bakh/eot/YekanBakh-Bold.eot');
+    /* IE9 Compat Modes */
+    src: url('../font/yekan-bakh/eot/YekanBakh-Bold.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../font/yekan-bakh/woff2/YekanBakh-Bold.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../font/yekan-bakh/woff/YekanBakh-Bold.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../font/yekan-bakh/ttf/YekanBakh-Bold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../font/yekan-bakh/svg/YekanBakh-Bold.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'YekanBakh';
+    src: url('../font/yekan-bakh/eot/YekanBakh-Bold.eot');
+    /* IE9 Compat Modes */
+    src: url('../font/yekan-bakh/eot/YekanBakh-Bold.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../font/yekan-bakh/woff2/YekanBakh-Bold.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../font/yekan-bakh/woff/YekanBakh-Bold.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../font/yekan-bakh/ttf/YekanBakh-Bold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../font/yekan-bakh/svg/YekanBakh-Bold.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Kalameh';
+    src: url('../font/Kalameh/eot/KalamehWeb_thin.eot');
+    /* IE9 Compat Modes */
+    src: url('../font/Kalameh/eot/KalamehWeb_thin.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../font/Kalameh/woff2/KalamehWeb_thin.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../font/Kalameh/woff/KalamehWeb_thin.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../font/Kalameh/ttf/KalamehWeb_thin.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../font/Kalameh/svg/KalamehWeb_thin.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Kalameh';
+    src: url('../font/Kalameh/eot/KalamehWeb_thin.eot');
+    /* IE9 Compat Modes */
+    src: url('../font/Kalameh/eot/KalamehWeb_thin.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../font/Kalameh/woff2/KalamehWeb_thin.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../font/Kalameh/woff/KalamehWeb_thin.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../font/Kalameh/ttf/KalamehWeb_thin.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../font/Kalameh/svg/KalamehWeb_thin.svg#svgFontName') format('svg');
+    /*Legacy iOS */
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Kalameh';
+    src: url('../font/Kalameh/eot/KalamehWeb_Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../font/Kalameh/eot/KalamehWeb_Regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../font/Kalameh/woff2/KalamehWeb_Regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../font/Kalameh/woff/KalamehWeb_Regular.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../font/Kalameh/ttf/KalamehWeb_Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../font/Kalameh/svg/KalamehWeb_Regular.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Kalameh';
+    src: url('../font/Kalameh/eot/KalamehWeb_Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../font/Kalameh/eot/KalamehWeb_Regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../font/Kalameh/woff2/KalamehWeb_Regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../font/Kalameh/woff/KalamehWeb_Regular.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../font/Kalameh/ttf/KalamehWeb_Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../font/Kalameh/svg/KalamehWeb_Regular.svg#svgFontName') format('svg');
+    /*Legacy iOS */
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Kalameh';
+    src: url('../font/Kalameh/eot/KalamehWeb_Bold.eot');
+    /* IE9 Compat Modes */
+    src: url('../font/Kalameh/eot/KalamehWeb_Bold.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../font/Kalameh/woff2/KalamehWeb_Bold.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../font/Kalameh/woff/KalamehWeb_Bold.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../font/Kalameh/ttf/KalamehWeb_Bold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../font/Kalameh/svg/KalamehWeb_Bold.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Kalameh';
+    src: url('../font/Kalameh/eot/KalamehWeb_Black.eot');
+    /* IE9 Compat Modes */
+    src: url('../font/Kalameh/eot/KalamehWeb_Black.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../font/Kalameh/woff2/KalamehWeb_Black.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../font/Kalameh/woff/KalamehWeb_Black.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../font/Kalameh/ttf/KalamehWeb_Black.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../font/Kalameh/svg/KalamehWeb_Black.svg#svgFontName') format('svg');
+    /* Legacy iOS */
+    font-weight: 900;
+}
+
+/* icons font */
+@font-face {
+    font-family: 'icomoon';
+    src: url("../font/line-awesome/fonts/icomoon.eot?ee9xs1");
+    src: url("../font/line-awesome/fonts/icomoon.eot?ee9xs1#iefix") format("embedded-opentype"),
+        url("../font/line-awesome/fonts/icomoon.ttf?ee9xs1") format("truetype"),
+        url("../font/line-awesome/fonts/icomoon.woff?ee9xs1") format("woff"),
+        url("../font/line-awesome/fonts/icomoon.svg?ee9xs1#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* Kit Styles */
+:root {
+    --main-color-default: #1D2125;
+    --main-color-second: #CD9300;
+    --hover-color-default: #1D2125;
+    --hover-color-second: #CD9300;
+    --title-color: #292C44;
+    --description-color: #030305;
+}
+
+/* Global Styles */
+* {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+html {
+    font-family: "YekanBakh";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: "YekanBakh";
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--title-color, #000000);
+    overflow-x: hidden;
+}
+
+.none-overflow {
+    overflow-y: hidden;
+}
+
+.overflow {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Main && Header && Footer */
+.main .row,
+.header .row,
+.footer .row,
+section .row {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.main .row-fluid,
+.header .row-fluid,
+.footer .row-fluid,
+section .row-fluid {
+    width: 100%;
+    margin: 0 auto;
+}
+
+a,
+a:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/************* Inedx *************/
+.slider {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+}
+
+.slider .video {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: top right;
+}
+
+.filter {
+    position: relative;
+    margin-top: -115px;
+    z-index: 1;
+}
+
+.filter .tab-container {
+    width: 100%;
+    max-width: 950px;
+    padding: 35px;
+    background: #1D2125;
+    box-shadow: 0px 4px 16px 6px rgba(72, 72, 72, 0.15);
+}
+
+.filter .tabs {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    overflow-x: hidden;
+    min-height: 80px;
+}
+
+.filter .tabs .tab-item button {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    font-family: 'Kalameh';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: right;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.filter .tabs .tab-item button:after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    right: 5%;
+    bottom: -10px;
+    background: #CD9300;
+    -webkit-transition: width 300ms ease-in-out;
+    -moz-transition: width 300ms ease-in-out;
+    -ms-transition: width 300ms ease-in-out;
+    -o-transition: width 300ms ease-in-out;
+    transition: width 300ms ease-in-out;
+}
+
+.filter .tabs .tab-item button.active {
+    font-weight: 900;
+}
+
+.filter .tabs .tab-item button.active:after {
+    width: 100%;
+    -webkit-transition: width 300ms ease-in-out;
+    -moz-transition: width 300ms ease-in-out;
+    -ms-transition: width 300ms ease-in-out;
+    -o-transition: width 300ms ease-in-out;
+    transition: width 300ms ease-in-out;
+}
+
+.filter .tab-content {
+    display: block;
+    width: 100%;
+    color: #fff;
+}
+
+.filter .tab-content .tab-column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: red;
+}
+
+.filter .tab-content .tab-column .form-label {
+    width: 70px;
+    font-family: 'Kalameh';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: right;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.filter .tab-content .tab-column .form-input {
+    width: calc(100% - 70px);
+}
+
+
+
+
+
+
+
+
+
+.category {
+    margin-top: 50px;
+}
+
+.category .cat-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.category .card-item {
+    position: relative;
+    width: calc(25% - 20px);
+}
+
+.category .card-item img {
+    width: 100%;
+    height: 520px;
+    z-index: 0;
+}
+
+.category .card-item .title {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    font-family: 'Kalameh';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.category .card-item .title span {
+    position: relative;
+}
+
+.category .card-item .title span:after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    right: 5%;
+    bottom: -15px;
+    background: #fff;
+    -webkit-transition: width 500ms ease-in-out;
+    -moz-transition: width 500ms ease-in-out;
+    -ms-transition: width 500ms ease-in-out;
+    -o-transition: width 500ms ease-in-out;
+    transition: width 500ms ease-in-out;
+}
+
+.category .card-item:hover .title span:after {
+    width: 90%;
+    -webkit-transition: width 500ms ease-in-out;
+    -moz-transition: width 500ms ease-in-out;
+    -ms-transition: width 500ms ease-in-out;
+    -o-transition: width 500ms ease-in-out;
+    transition: width 500ms ease-in-out;
+}
