@@ -443,6 +443,7 @@ a:hover {
     align-content: center;
     justify-content: flex-start;
     align-items: flex-end;
+    margin-bottom: 35px;
     /* background-color: red; */
 }
 
@@ -467,6 +468,16 @@ a:hover {
     border-bottom: 1px solid #5E718D;
     border-radius: 0;
     padding: 3px;
+}
+
+.filter .tab-content .tab-column #form-radio {
+    width: calc(100% - 85px) !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 
 .filter .tab-content .tab-column .form-control {
@@ -705,9 +716,7 @@ a:hover {
 
 
 
-.radio {
-    margin: 0.5rem;
-}
+
 
 .radio input[type=radio] {
     position: absolute;
