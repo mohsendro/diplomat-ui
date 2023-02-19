@@ -439,7 +439,7 @@ a:hover {
 .filter .tab-content .tab-column {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: center;
     justify-content: space-between;
     align-items: flex-end;
@@ -461,6 +461,86 @@ a:hover {
     width: calc(100% - 70px);
 }
 
+.filter .tab-content .tab-column #noimelk\ form-input {
+    width: calc(100% - 70px);
+    background: #FFFFFF;
+    border-bottom: 1px solid #5E718D;
+    border-radius: 0;
+    padding: 3px;
+}
+
+.filter .tab-content .tab-column .form-control {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 40px;
+    position: relative;
+    direction: rtl;
+    text-align: right;
+    font-family: 'Kalameh';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2D3643;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+.filter .tab-content .tab-column .filter-multi-select>.dropdown-toggle::before {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    width: 10px;
+    height: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg width='13' height='7' viewBox='0 0 13 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.512 1.32495L6.51196 5.32495L1.51196 1.32495' stroke='%232D3643' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 0.255em;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+.filter .tab-content .tab-column .text-dark {
+    font-family: 'Kalameh';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #2D3643 !important;
+}
+
+.filter .tab-content .tab-column .placeholder {
+    display: inline-block;
+    font-family: 'Kalameh';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #2D3643 !important;
+    background: transparent;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.filter .tab-content .tab-column .selected-items {}
+
+.filter .tab-content .tab-column {}
+
+.filter .tab-content .tab-column {}
+
+.filter .tab-content .tab-column {}
 
 
 
