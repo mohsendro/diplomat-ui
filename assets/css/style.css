@@ -919,8 +919,8 @@ a:hover {
 
 .category {
     height: auto;
-    overflow-x: hidden;
-    overflow-y: visible;
+    /* overflow-x: hidden;
+    overflow-y: visible; */
     margin-top: 50px;
 }
 
