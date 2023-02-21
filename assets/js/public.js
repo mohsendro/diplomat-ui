@@ -23,22 +23,32 @@ window.onload = function () {
     };
 
     function scrollFunction() {
-        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-            document.getElementById("header").style.transition = "all 0.5s";
-            document.getElementById("logo").style.transition = "all 0.5s";
-            document.getElementById("minilogo").style.transition = "all 0.5s";
-            document.getElementById("header").style.background = "#000A90";
-            document.getElementById("minilogo").style.width = "52px";
-            document.getElementById("minilogo").style.height = "52px";
-            document.getElementById("logo").style.marginLeft = "5px";
+        if (window.matchMedia('screen and (min-width: 992px)').matches) {
+
+            if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+
+                let bigLogo = document.getElementsByClassName("big-logo")[0];
+                let headerLogo = document.getElementsByClassName("header-logo")[0];
+                let headerNav = document.getElementsByClassName("wsmenu")[0];
+                bigLogo.style.cssText = "display: none;";
+                headerLogo.style.cssText = "width: 133px;";
+                headerNav.style.cssText = "margin-right: 133px;";
+
+            } else {
+
+                let bigLogo = document.getElementsByClassName("big-logo")[0];
+                let headerLogo = document.getElementsByClassName("header-logo")[0];
+                let headerNav = document.getElementsByClassName("wsmenu")[0];
+                bigLogo.style.cssText = "display: block;";
+                headerLogo.style.cssText = "width: 0px;";
+                headerNav.style.cssText = "margin-right: 0;";
+
+            }
+
         } else {
-            document.getElementById("header").style.transition = "all 0.5s";
-            document.getElementById("logo").style.transition = "all 0.5s";
-            document.getElementById("minilogo").style.transition = "all 0.5s";
-            document.getElementById("header").style.background = "transparent";
-            document.getElementById("minilogo").style.width = "107px";
-            document.getElementById("minilogo").style.height = "107px";
-            document.getElementById("logo").style.marginLeft = "52px";
+
+            let headerNav = document.getElementsByClassName("wsmenu")[0];
+            headerNav.style.cssText = "margin-right: 0;";
         }
     }
 
