@@ -26,18 +26,81 @@
 
   <!-- Filter Css -->
   <link rel="stylesheet" href="assets/css/vendor/filter-multi-select/filter_multi_select.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <!-- Diplomat Css -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
-<body>
+<body class="overflow">
+
   <!-- Header Start -->
   <header id="header" class="container-fluid header">
-    <div class="row">
-      <div class="col-12 d-flex flex-row flex-wrap justify-content-start align-items-center">
-      </div>
+    <div class="wsmenucontainer clearfix container">
+      <div class="overlapblackbg"></div>
+      
+        <!--Mobile Menu HTML Code Start-->
+        <div class="wsmobileheader clearfix mobile-container">
+          <a id="wsnavtoggle" class="animated-arrow"><span></span></a>
+          <a class="smallogo"><img src="images/logo.png" width="120" alt=""></a>
+          <a class="callusicon" href="tel:123456789"><span class="fa fa-phone"></span></a>
+        </div>
+        <!--Mobile Menu HTML Code End-->
+        
+        <!--Desktop Menu HTML Code Start-->
+        <div class="row wrapper clearfix desktop-container">
+          <!-- <div class="logo clearfix"><a href="index.html" title="Responsive Slide Menus"><img src="images/logo.png" alt=""></a></div> -->
+          <div class="col-6 d-flex flex-row flex-wrap justify-content-start align-items-center">
+            <a href="#" class="header-logo">
+              <img src="assets/img/global/logo.svg" alt="diplomat" width="auto" height="auto">
+            </a>           
+            <nav class="wsmenu clearfix">
+              <ul class="mobile-sub wsmenu-list">
+                <li class="menu-arrow-1">
+                  <span class="wsmenu-click"><i class="wsmenu-arrow fa fa-angle-down"></i></span><a href="#">فروش</a>
+                  <ul class="wsmenu-submenu">
+                    <li><a href="#">First level menu</a></li>
+                    <li><a href="#">First level menu</a></li>
+                    <li><a href="#">First level menu</a></li>
+                    <li><a href="#">First level menu</a></li>
+                    <li class="menu-arrow-2"><span class="wsmenu-click02"><i class="wsmenu-arrow fa fa-angle-down"></i></span><a href="#">First level menu</a>
+                      <ul class="wsmenu-submenu-sub">
+                        <li><a href="#">Second level menu</a></li>
+                        <li><a href="#">Second level menu</a></li>
+                        <li><a href="#">Second level menu</a></li>
+                        <li class="menu-arrow-2"><span class="wsmenu-click02"><i class="wsmenu-arrow fa fa-angle-down"></i></span><a href="#">Second level menu</a>
+                          <ul class="wsmenu-submenu-sub-sub">
+                            <li class=""><a href="#">Third level menu</a></li>
+                            <li class=""><a href="#">Third level menu</a></li>
+                            <li class=""><a href="#">Third level menu</a></li>
+                            <li class=""><a href="#">Third level menu</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-arrow-1">
+                  <span class="wsmenu-click"><i class="wsmenu-arrow fa fa-angle-down"></i></span><a href="#">رهن و اجاره</a>
+                </li>
+                <li class="menu-arrow-1">
+                  <span class="wsmenu-click"><i class="wsmenu-arrow fa fa-angle-down"></i></span><a href="#">مشارکت در ساخت</a>
+                </li>
+                <li class="menu-arrow-1">
+                  <span class="wsmenu-click"><i class="wsmenu-arrow fa fa-angle-down"></i></span><a href="#">آگهی های روز</a>
+                </li>
+                <!-- <li class="menu-arrow-1">
+                  <span class="wsmenu-click"><i class="wsmenu-arrow fa fa-angle-down"></i></span><a href="#"><i class="fa fa-align-justify"></i>&nbsp;&nbsp;آگهی های روز</a>
+                </li> -->
+              </ul>
+            </nav>
+          </div>
+          <div class="col-6 d-flex flex-row flex-wrap justify-content-end align-items-center">
+            لوگوی بزرگ و جستجو و حساب کاربری
+          </div>
+        </div>
+        <!--Desktop Menu HTML Code End-->
+
+      </div>  
     </div>
   </header>
   <!-- Header End -->
@@ -47,7 +110,7 @@
     <div class="row-fluid">
       <div class="col-12 d-flex flex-row flex-wrap justify-content-center align-items-center">
         <video class="video" autoplay muted loop>
-          <!-- <source src="assets/video/index/slider.webm" type="video/mp4"> -->
+          <source src="assets/video/index/slider.webm" type="video/mp4">
           <!-- <source src="assets/video/index/slider.mp4" type="video/mp4"> -->
         </video>
       </div>
@@ -194,7 +257,7 @@
                     </div>
                   </div>
                   <div class="col-12 col-sm-6 col-md-4 p-0 tab-column">
-                    <label class="form-label" for="design">واحد:</label>
+                    <label class="form-label" for="vahedha">واحد:</label>
                     <div id="form-radio">
                       <div class="radio">
                         <input type="radio" id="porvahed" name="vahedha" value="porvahed" checked />
@@ -206,32 +269,34 @@
                       </div>
                     </div>
                   </div>
-                  
-
-                  
-                  
-                  
-                  
-                  
-                  
-
-
-
-                  <button type="submit">اعمال فیلتر</button>
+                  <div class="col-12 col-sm-6 col-md-4 p-0 tab-column">
+                    <label class="form-label" for="price">قیمت:</label>
+                    <section class="range-slider container">
+                      <span class="output outputOne"></span>
+                      <span class="output outputTwo"></span>
+                      <span class="full-range"></span>
+                      <span class="incl-range"></span>
+                      <input name="rangeOne" value="10" min="0" max="100" step="1" type="range">
+                      <input name="rangeTwo" value="90" min="0" max="100" step="1" type="range">
+                    </section>
+                  </div>
+                  <div class="col-12 tab-column button-container">
+                    <button class="form-send" type="submit">اعمال فیلتر</button>
+                  </div>
                 </form>
               </div>
             </div>
             <div class="tab-pane fade" id="tab-two" role="tabpanel" aria-labelledby="tab-two" tabindex="0">
-              Tab 2
+              محتوای تب رهن و اجاره
             </div>
             <div class="tab-pane fade" id="tab-three" role="tabpanel" aria-labelledby="tab-three" tabindex="0">
-              Tab 3
+              محتوای تب پیش خرید
             </div>
             <div class="tab-pane fade" id="tab-four" role="tabpanel" aria-labelledby="tab-four" tabindex="0">
-              Tab 4
+              محتوای تب مشارکت در ساخت
             </div>
             <div class="tab-pane fade" id="tab-five" role="tabpanel" aria-labelledby="tab-five" tabindex="0">
-              Tab 5
+              محتوای تب کلنگی
             </div>
           </div>
         </div>
@@ -274,27 +339,27 @@
   </section>
   <!-- Space End -->
 
-
-
   <!-- bootstrap-v5 Js -->
   <script src="assets/js/vendor/bootstrap-v5/bootstrap.bundle.min.js"></script>
   <!-- <script src="assets/js/vendor/bootstrap-v5/popper.min.js"></script> -->
   <!-- <script src="assets/js/vendor/bootstrap-v5/bootstrap.min.js"></script> -->
+  <script src="assets/js/vendor/jquery/jquery.min.js"></script>
+
 
   <!-- AOS Js -->
   <script src="assets/js/vendor/aos/aos.js"></script>
   <script>AOS.init();</script>
 
   <!-- Swiper Js -->
-  <script src="assets/js/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="assets/js/vendor/swiper/swiper-bundle.min.js"></script> -->
 
   <!-- Menus Js -->
-  <script src="assets/js/vendor/webslide/jquery.min.js"></script>
+  <!-- <script src="assets/js/vendor/webslide/jquery.min.js"></script> -->
   <script src="assets/js/vendor/webslide/webslidemenu.js"></script>   
 
   <!-- Counterup Js -->
   <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> -->
-  <script src="assets/js/vendor/counterup/jquery.counterup.min.js"></script>
+  <!-- <script src="assets/js/vendor/counterup/jquery.counterup.min.js"></script> -->
 
   <!-- Filter Js -->
   <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
@@ -393,6 +458,39 @@
           e.preventDefault();
           return false;
         }
+      });
+    });
+  </script>
+  <script>
+    var rangeOne = document.querySelector('input[name="rangeOne"]'),
+    rangeTwo = document.querySelector('input[name="rangeTwo"]'),
+    outputOne = document.querySelector('.outputOne'),
+    outputTwo = document.querySelector('.outputTwo'),
+    inclRange = document.querySelector('.incl-range'),
+    updateView = function () {
+      if (this.getAttribute('name') === 'rangeOne') {
+        outputOne.innerHTML = this.value;
+        outputOne.style.right = this.value / this.getAttribute('max') * 100 + '%';
+      } else {
+        outputTwo.style.right = this.value / this.getAttribute('max') * 100 + '%';
+        outputTwo.innerHTML = this.value
+      }
+      if (parseInt(rangeOne.value) > parseInt(rangeTwo.value)) {
+        inclRange.style.width = (rangeOne.value - rangeTwo.value) / this.getAttribute('max') * 100 + '%';
+        inclRange.style.right = rangeTwo.value / this.getAttribute('max') * 100 + '%';
+      } else {
+        inclRange.style.width = (rangeTwo.value - rangeOne.value) / this.getAttribute('max') * 100 + '%';
+        inclRange.style.right = rangeOne.value / this.getAttribute('max') * 100 + '%';
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', function () {
+      updateView.call(rangeOne);
+      updateView.call(rangeTwo);
+      $('input[type="range"]').on('mouseup', function () {
+        this.blur();
+      }).on('mousedown input', function () {
+        updateView.call(this);
       });
     });
   </script>

@@ -1,4 +1,42 @@
 /* Header */
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 74px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: -74px;
+    z-index: 999;
+}
+
+.wsmenucontainer {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.desktop-container {
+    position: relative;
+}
+
+.mobile-container {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -12,4 +50,94 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) {}
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .header-logo {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 133px;
+        height: 96px;
+        z-index: 1;
+    }
+
+    .header-logo img {
+        width: auto;
+        height: auto;
+        max-width: 133px;
+        max-height: 96px;
+    }
+
+    .wsmenu {
+        width: 100%;
+        max-width: 1200px;
+        font-family: 'YekanBakh';
+        position: relative;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: #FFFFFF;
+        background-color: transparent;
+        -webkit-border-radius: 4px 4px 0px 0px;
+        -moz-border-radius: 4px 4px 0px 0px;
+        border-radius: 4px 4px 0px 0px;
+        padding: 0px;
+        margin-right: 133px;
+    }
+
+    .wsmenu-list {
+        text-align: right;
+    }
+
+    .wsmenu-list>li {
+        position: relative;
+        /* -webkit-transition: width 500ms ease-in-out;
+        -moz-transition: width 500ms ease-in-out;
+        -ms-transition: width 500ms ease-in-out;
+        -o-transition: width 500ms ease-in-out;
+        transition: width 500ms ease-in-out; */
+    }
+
+    .wsmenu-list>li:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0%;
+        height: 2.5px;
+        background-color: #FFF;
+        border-radius: 5px;
+        -webkit-transition: width 500ms ease-in-out;
+        -moz-transition: width 500ms ease-in-out;
+        -ms-transition: width 500ms ease-in-out;
+        -o-transition: width 500ms ease-in-out;
+        transition: width 500ms ease-in-out;
+    }
+
+    .wsmenu-list>li:hover:after {
+        width: 100%;
+    }
+
+    .wsmenu-list>li>a {
+        font-family: 'YekanBakh';
+        position: relative;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #FFFFFF;
+        background: transparent;
+        border-right: none;
+        padding: 7px;
+    }
+
+    .wsmenu-list li:hover>a {
+        background-color: transparent !important;
+    }
+
+    .wsmenu-submenu {}
+
+    .wsmenu-submenu li {}
+
+    .wsmenu-submenu li a {}
+}
