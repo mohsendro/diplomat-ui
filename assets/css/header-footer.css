@@ -1,4 +1,4 @@
-/* Header */
+/********* Header *********/
 .header {
     position: sticky;
     top: 0;
@@ -32,11 +32,39 @@
     position: relative;
 }
 
-.header-search {
+
+/* Elements header */
+.header .daily-ads {
+    display: inline-block;
+    width: auto;
+    margin-left: 30px;
+}
+
+.header .daily-ads:hover button {
+    color: #FFFFFF;
+    background: #CD9300;
+    border: none;
+}
+
+.header .daily-ads button {
+    font-family: 'YekanBakh';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.header .search {
     display: inline-block;
     width: 100%;
     min-width: 210px;
-    font-family: 'YekanBakh';
+    font-family: 'Kalameh';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -50,6 +78,7 @@
     background-position-y: center;
     background-size: 16px 16px;
     background-repeat: no-repeat;
+    border-radius: 5px;
     padding: 4px 30px 4px 4px;
     margin-left: 10px;
 }
@@ -137,6 +166,13 @@
 }
 
 
+/********* Footer *********/
+.footer {}
+
+
+/* Elements footer */
+
+
 /* Responsive footer */
 @media (max-width: 575.98px) {}
 
@@ -148,11 +184,11 @@
 
 @media (min-width: 1200px) {
     .header-logo {
-        position: absolute;
+        position: relative;
         right: 0;
         top: 0;
         width: 0;
-        height: 96px;
+        height: auto;
         z-index: 1;
         -webkit-transition: All 300ms ease-in-out;
         -moz-transition: All 300ms ease-in-out;
@@ -175,7 +211,12 @@
         transition: All 300ms ease-in-out;
     }
 
-    .header-logo img,
+    .header-logo img {
+        width: 100%;
+        max-width: 90px;
+        height: auto;
+    }
+
     .big-logo img {
         width: 100%;
         height: 100%;
@@ -184,10 +225,10 @@
     }
 
     .wsmenu {
+        position: relative;
         width: auto;
         max-width: 1200px;
         font-family: 'YekanBakh';
-        position: relative;
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -252,9 +293,57 @@
         background-color: transparent !important;
     }
 
-    .wsmenu-submenu {}
+    .wsmenu-submenu {
+        font-family: inherit;
+        font-style: inherit;
+        font-weight: inherit;
+        font-size: 14px;
+        line-height: inherit;
+        text-align: right;
+    }
 
-    .wsmenu-submenu li {}
+    .wsmenu-submenu li {
+        font-family: inherit;
+        font-style: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        text-align: right;
+    }
 
-    .wsmenu-submenu li a {}
+    .wsmenu-submenu li a {
+        font-family: inherit;
+        font-style: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        text-align: right;
+    }
+
+    .wsmenu-submenu-sub {
+        font-family: inherit;
+        font-style: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        text-align: right;
+    }
+
+    .wsmenu-submenu-sub li {
+        font-family: inherit;
+        font-style: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        text-align: right;
+    }
+
+    .wsmenu-submenu-sub li a {
+        font-family: inherit;
+        font-style: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        text-align: right;
+    }
 }

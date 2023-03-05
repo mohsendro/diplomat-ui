@@ -346,6 +346,7 @@ a:hover {
 .slider {
     position: relative;
     width: 100%;
+    height: 100vh;
     min-height: 600px;
     padding: 0;
     margin: 0;
@@ -354,7 +355,7 @@ a:hover {
 
 .slider .video {
     width: 100%;
-    height: 600px;
+    height: 100vh;
     object-fit: cover;
     object-position: top right;
 }

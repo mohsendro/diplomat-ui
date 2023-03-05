@@ -31,8 +31,8 @@ window.onload = function () {
                 let headerLogo = document.getElementsByClassName("header-logo")[0];
                 let headerNav = document.getElementsByClassName("wsmenu")[0];
                 bigLogo.style.cssText = "display: none;";
-                headerLogo.style.cssText = "width: 133px;";
-                headerNav.style.cssText = "margin-right: 133px;";
+                headerLogo.style.cssText = "width: 90px;";
+                headerNav.style.cssText = "margin-right: 30px;";
 
             } else {
 
