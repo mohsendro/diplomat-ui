@@ -151,7 +151,7 @@
     <div class="row-fluid">
       <div class="col-12 d-flex flex-row flex-wrap justify-content-center align-items-center">
         <video class="video" autoplay muted loop>
-          <source src="assets/video/index/slider.webm" type="video/mp4">
+          <!-- <source src="assets/video/index/slider.webm" type="video/mp4"> -->
           <!-- <source src="assets/video/index/slider.mp4" type="video/mp4"> -->
         </video>
       </div>
@@ -160,7 +160,7 @@
   <!-- Slider End -->
 
   <!-- Filter Start -->
-  <section id="filter" class="container filter">
+  <section id="filter" class="container-fluid filter">
     <div class="row">
       <div class="col-12 d-flex flex-row flex-wrap justify-content-center align-items-center">
         <div class="tab-container">               
@@ -203,7 +203,15 @@
                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M4.28338 7.14882L8.2173 11.0827L10.869 10.5524L11.3993 7.90076L7.46536 3.96683C8.61476 3.47991 9.88721 3.36307 11.1059 3.63329C12.3246 3.90352 13.4287 4.54697 14.2646 5.4741C15.1004 6.40122 15.6264 7.56588 15.7694 8.80596C15.9123 10.046 15.6651 11.2998 15.0621 12.3928L21.1493 17.6508C21.5708 18.0728 21.8076 18.645 21.8074 19.2415C21.8072 19.838 21.5702 20.41 21.1484 20.8318C20.7266 21.2536 20.1545 21.4907 19.558 21.4908C18.9615 21.491 18.3893 21.2543 17.9673 20.8327L12.7093 14.7454C11.6163 15.3484 10.3626 15.5958 9.12251 15.4529C7.88243 15.3099 6.71777 14.7839 5.79065 13.948C4.86352 13.1122 4.22006 12.0081 3.94984 10.7894C3.67961 9.57067 3.79645 8.29822 4.28338 7.14882Z" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>                                    
-                کلنکی
+                بازسازی
+              </button>
+            </li>
+            <li class="nav-item tab-item" role="presentation">
+              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#tab-six" type="button" role="tab" aria-controls="tab-six" aria-selected="true">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.28338 7.14882L8.2173 11.0827L10.869 10.5524L11.3993 7.90076L7.46536 3.96683C8.61476 3.47991 9.88721 3.36307 11.1059 3.63329C12.3246 3.90352 13.4287 4.54697 14.2646 5.4741C15.1004 6.40122 15.6264 7.56588 15.7694 8.80596C15.9123 10.046 15.6651 11.2998 15.0621 12.3928L21.1493 17.6508C21.5708 18.0728 21.8076 18.645 21.8074 19.2415C21.8072 19.838 21.5702 20.41 21.1484 20.8318C20.7266 21.2536 20.1545 21.4907 19.558 21.4908C18.9615 21.491 18.3893 21.2543 17.9673 20.8327L12.7093 14.7454C11.6163 15.3484 10.3626 15.5958 9.12251 15.4529C7.88243 15.3099 6.71777 14.7839 5.79065 13.948C4.86352 13.1122 4.22006 12.0081 3.94984 10.7894C3.67961 9.57067 3.79645 8.29822 4.28338 7.14882Z" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                                    
+                پیمانکاری
               </button>
             </li>
           </ul>
@@ -211,6 +219,9 @@
             <div class="tab-pane fade show active" id="tab-one" role="tabpanel" aria-labelledby="tab-one" tabindex="0">
               <div class="row w-100">
                 <form action="/" method="GET" class="row w-100 filter-form p-0" id="filter-form">   
+                  <div class="col-12 p-0 m-0 tab-column">
+                    <input type="hidden" name="dastebandi" value="forosh">
+                  </div>
                   <div class="col-12 col-sm-6 col-md-4 p-0 tab-column">
                     <label class="form-label" for="noimelk">نوع ملک:</label>
                     <select multiple name="noimelk" id="form-input" class="filter-multi-select">
@@ -247,15 +258,6 @@
                     </select>
                   </div>
                   <div class="col-12 col-sm-6 col-md-4 p-0 tab-column">
-                    <label class="form-label" for="senbana">سن بنا:</label>
-                    <select multiple name="senbana" id="form-input" class="filter-multi-select">
-                      <option value="nosaz">نوساز</option>
-                      <option value="1ta5">از یک تا پنج سال</option>
-                      <option value="5ta10">از پنج تا ده سال</option>
-                      <option value="upper10">ده سال به بالا</option>
-                    </select>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 p-0 tab-column">
                     <label class="form-label" for="emkanat">امکانات:</label>
                     <select multiple name="emkanat" id="form-input" class="filter-multi-select">
                       <option value="estakhr">استخر</option>
@@ -285,17 +287,13 @@
                     </select>
                   </div>
                   <div class="col-12 col-sm-6 col-md-4 p-0 tab-column">
-                    <label class="form-label" for="design">طبقات:</label>
-                    <div id="form-radio">
-                      <div class="radio">
-                        <input type="radio" id="tabagebala" name="tabagat" value="tabagebala" checked />
-                        <label for="tabagebala" class="radio-label">بالا</label>
-                      </div>
-                      <div class="radio">
-                        <input type="radio" id="tabagepaeen" name="tabagat" value="tabagepaeen" />
-                        <label for="tabagepaeen" class="radio-label">پایین</label>
-                      </div>
-                    </div>
+                    <label class="form-label" for="senbana">سن بنا:</label>
+                    <select multiple name="senbana" id="form-input" class="filter-multi-select">
+                      <option value="nosaz">نوساز</option>
+                      <option value="1ta5">از یک تا پنج سال</option>
+                      <option value="5ta10">از پنج تا ده سال</option>
+                      <option value="upper10">ده سال به بالا</option>
+                    </select>
                   </div>
                   <div class="col-12 col-sm-6 col-md-4 p-0 tab-column">
                     <label class="form-label" for="vahedha">واحد:</label>
@@ -311,11 +309,26 @@
                     </div>
                   </div>
                   <div class="col-12 col-sm-6 col-md-4 p-0 tab-column">
+                    <label class="form-label" for="design">طبقات:</label>
+                    <div id="form-radio">
+                      <div class="radio">
+                        <input type="radio" id="tabagebala" name="tabagat" value="tabagebala" checked />
+                        <label for="tabagebala" class="radio-label">اول تا پنجم</label>
+                      </div>
+                      <div class="radio">
+                        <input type="radio" id="tabagepaeen" name="tabagat" value="tabagepaeen" />
+                        <label for="tabagepaeen" class="radio-label">پنچم به بالا</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 p-0 tab-column">
                     <label class="form-label" for="price">قیمت:</label>
                     <section class="range-slider container">
                       <span class="output outputOne"></span>
                       <span class="output outputTwo"></span>
+                      <span class="full-range-prefix">10 میلیارد تومان</span>
                       <span class="full-range"></span>
+                      <span class="full-range-suffix">20 میلیارد تومان</span>
                       <span class="incl-range"></span>
                       <input name="rangeOne" value="10" min="0" max="100" step="1" type="range">
                       <input name="rangeTwo" value="90" min="0" max="100" step="1" type="range">
@@ -337,7 +350,10 @@
               محتوای تب مشارکت در ساخت
             </div>
             <div class="tab-pane fade" id="tab-five" role="tabpanel" aria-labelledby="tab-five" tabindex="0">
-              محتوای تب کلنگی
+              محتوای بازسازی
+            </div>
+            <div class="tab-pane fade" id="tab-six" role="tabpanel" aria-labelledby="tab-six" tabindex="0">
+              محتوای پیمانکاری
             </div>
           </div>
         </div>
@@ -347,7 +363,7 @@
   <!-- Filter End -->
 
   <!-- Category Start -->
-  <section id="category" class="container category">
+  <section id="category" class="container-fluid category">
     <div class="row">
       <div class="col-12 cat-container">
         <a href="#" class="card-item" title="خریـــد وفروش" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">

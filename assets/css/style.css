@@ -347,7 +347,6 @@ a:hover {
     position: relative;
     width: 100%;
     height: 100vh;
-    min-height: 600px;
     padding: 0;
     margin: 0;
     z-index: 0;
@@ -358,20 +357,30 @@ a:hover {
     height: 100vh;
     object-fit: cover;
     object-position: top right;
+    background: black;
 }
 
 .filter {
     position: relative;
-    margin-top: -115px;
+    margin-top: 0;
     z-index: 1;
+    background-image: url('../img/index/back1.svg'), url('../img/index/back2.svg');
+    background-position: calc(100% + 0px) calc(100% - 70px), left bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 650px auto, 450px auto;
+    padding: 70px 0 280px;
+    margin-bottom: -100px;
 }
 
 .filter .tab-container {
+    position: relative;
     width: 100%;
-    max-width: 950px;
+    max-width: 1265px;
+    min-height: 440px;
     padding: 35px;
-    background: #1D2125;
+    background: rgba(0, 0, 0, 0.9);
     box-shadow: 0px 4px 16px 6px rgba(72, 72, 72, 0.15);
+    border-radius: 10px;
 }
 
 .filter .tabs {
@@ -443,13 +452,12 @@ a:hover {
     flex-wrap: nowrap;
     align-content: center;
     justify-content: flex-start;
-    align-items: flex-end;
-    margin-bottom: 35px;
-    /* background-color: red; */
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 .filter .tab-content .tab-column .form-label {
-    width: 60px;
+    width: 65px;
     font-family: 'Kalameh';
     font-style: normal;
     font-weight: 700;
@@ -464,10 +472,10 @@ a:hover {
 }
 
 .filter .tab-content .tab-column #form-input {
-    width: calc(100% - 85px) !important;
+    width: calc(100% - 125px) !important;
     background: #FFFFFF;
     border-bottom: 1px solid #5E718D;
-    border-radius: 0;
+    border-radius: 5px;
     padding: 3px;
 }
 
@@ -702,9 +710,10 @@ a:hover {
 
 .filter .range-slider {
     position: relative;
-    width: 200px;
+    width: 270px;
     height: 35px;
     text-align: center;
+    margin: -15px 0 0 0;
 }
 
 .filter .range-slider input {
@@ -713,7 +722,7 @@ a:hover {
     overflow: hidden;
     left: 0;
     top: 18px;
-    width: 200px;
+    width: 270px;
     outline: none;
     height: 18px;
     margin: 0;
@@ -874,6 +883,18 @@ a:hover {
     border-radius: 20px;
 }
 
+.filter .full-range-prefix {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+}
+
+.filter .full-range-suffix {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+}
+
 .filter .incl-range {
     background: #CD9300;
     border-radius: 20px;
@@ -890,6 +911,8 @@ a:hover {
 }
 
 .filter .tab-content .tab-column.button-container {
+    position: absolute;
+    bottom: -25px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -904,10 +927,12 @@ a:hover {
     font-family: 'Kalameh';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
     color: #1D2125;
     background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
     border: none;
     transform: rotate(0.4deg);
     padding: 15px;
@@ -919,10 +944,11 @@ a:hover {
 }
 
 .category {
+    position: relative;
     height: auto;
-    /* overflow-x: hidden;
-    overflow-y: visible; */
-    margin-top: 50px;
+    /* overflow-x: hidden; */
+    /* overflow-y: visible; */
+    z-index: 1;
 }
 
 .category .cat-container {
@@ -944,6 +970,7 @@ a:hover {
     width: 100%;
     height: 520px;
     z-index: 0;
+    border-radius: 10px;
 }
 
 .category .card-item .title {
