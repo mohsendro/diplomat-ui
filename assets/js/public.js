@@ -55,6 +55,16 @@ window.onload = function () {
 }
 
 // Swiper Scripts
+var locationSwiper = new Swiper(".locationSwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
+
 var sliderSwiper = new Swiper(".sliderSwiper", {
 
     pagination: {

@@ -1,4 +1,4 @@
-/********* Header *********/
+/* Header */
 .header {
     position: sticky;
     top: 0;
@@ -28,12 +28,6 @@
     position: relative;
 }
 
-.position-relative {
-    position: relative;
-}
-
-
-/* Elements header */
 .header .daily-ads {
     display: inline-block;
     width: auto;
@@ -166,23 +160,425 @@
 }
 
 
-/********* Footer *********/
-.footer {}
+/* Footer */
+.footer {
+    font-family: 'Kalameh';
+    background: #2C2C2C;
+    padding: 25px 0;
+}
 
+.footer .column {
+    gap: 10px;
+    padding-right: 40px !important;
+}
 
-/* Elements footer */
+.footer .column:nth-child(1) {
+    padding-right: 0 !important;
+}
+
+.footer .logo {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.footer .desc {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 108%;
+    text-align: justify;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.footer .title {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin: 40px 0;
+}
+
+.footer .title span:after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: calc(100% - 100px);
+    height: 3px;
+    border-bottom: 2px dashed #ffffff;
+    border-radius: 5px;
+}
+
+.footer .info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.footer .contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 15px;
+    width: 100%;
+}
+
+.footer .contact.email {
+    margin-top: 25px;
+}
+
+.footer .contact .icon {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFC107;
+    border-radius: 24px;
+    padding: 7px;
+}
+
+.footer .contact.email .icon {
+    justify-content: center;
+    width: 35px;
+    height: auto;
+    background: transparent;
+    padding: 0;
+}
+
+.footer .access {
+    width: 100%;
+}
+
+.footer .access .address {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.footer .access .tel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    font-family: 'YekanBakh';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.footer .access .tel a {
+    color: #FFFFFF;
+}
+
+.footer .access .tel strong {
+    font-family: 'Kalameh';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.045em;
+    color: #FFFFFF;
+}
+
+.footer .access .tel span:last-child {
+    margin-right: 10px;
+}
+
+.footer .access .email span {
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 0.11em;
+    color: #FFFFFF;
+}
+
+.footer .head {
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.footer .links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.footer .links ul {
+    padding: 0;
+    flex-basis: 50%;
+}
+
+.footer .links ul li {
+    display: block;
+    width: 100%;
+}
+
+.footer .links ul li a {
+    position: relative;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: right;
+    color: #FFFFFF;
+    padding-right: 20px;
+}
+
+.footer .links ul li a:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.footer .links ul li a:hover {
+    color: var(--hover-color-second);
+}
+
+.footer .links ul li a:hover:before {
+    background-color: var(--hover-color-second);
+}
+
+.footer .subscribe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.footer .subscribe [type=email],
+.footer .subscribe [type=number],
+.footer .subscribe [type=tel],
+.footer .subscribe [type=url] {
+    display: block;
+    width: 100%;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #2C2C2C;
+    background: #FFFFFF;
+    border-radius: 18px;
+    padding: 15px 20px;
+    border: none;
+}
+
+.footer .subscribe [type=email]::placeholder {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #2C2C2C;
+}
+
+.footer .email-desc {
+    display: block;
+    width: 100%;
+    font-family: 'YekanBakh';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137.5%;
+    text-align: right;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.footer .socials {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    width: 100%;
+}
+
+.footer .socials li a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    max-height: 33px;
+    margin-top: 0;
+}
+
+.footer .socials li a:hover {
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    margin-top: -10px;
+}
+
+.footer .copyright {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    font-family: 'YekanBakh';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 95%;
+    color: #FFFFFF;
+    margin-top: 60px;
+}
+
+.footer .copyright strong,
+.footer .copyright a {
+    font-weight: 900;
+    color: #FFFFFF;
+}
 
 
 /* Responsive footer */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
 
-@media (min-width: 576px) and (max-width: 767.98px) {}
+    .footer .column {
+        padding-right: 0 !important;
+    }
 
-@media (min-width: 768px) and (max-width: 991.98px) {}
+    .footer .copyright {
+        gap: 15px;
+    }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+    .footer .copyright .diplomat {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 
-@media (min-width: 1200px) {
+    .footer .copyright .novin {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .footer .column {
+        padding-right: 0 !important;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .footer .column {
+        padding-right: 0 !important;
+    }
+
+    .footer .column:nth-child(3) {
+        padding-right: 40px !important;
+    }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .footer .column {
+        padding-right: 0 !important;
+    }
+
+    .footer .column:nth-child(3) {
+        padding-right: 40px !important;
+    }
+
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+    .footer .column {
+        padding-right: 0 !important;
+    }
+
+    .footer .column:nth-child(3) {
+        padding-right: 40px !important;
+    }
+
+}
+
+
+@media (min-width: 1400px) {
+
     .header-logo {
         position: relative;
         right: 0;

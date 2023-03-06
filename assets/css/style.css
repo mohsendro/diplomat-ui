@@ -321,7 +321,6 @@ body {
 .footer .row,
 section .row {
     width: 100%;
-    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -333,6 +332,25 @@ section .row-fluid {
     margin: 0 auto;
 }
 
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl,
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl,
+.row,
+.row>* {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 a,
 a:hover {
     -webkit-transition: all 0.3s ease-in-out;
@@ -340,6 +358,10 @@ a:hover {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+
+.position-relative {
+    position: relative;
 }
 
 /************* Inedx *************/
@@ -360,7 +382,7 @@ a:hover {
     background: black;
 }
 
-.filter {
+#filter {
     position: relative;
     margin-top: 0;
     z-index: 1;
@@ -370,12 +392,12 @@ a:hover {
     background-size: 650px auto, 450px auto;
     padding: 70px 0 280px;
     margin-bottom: -100px;
+    overflow-x: hidden;
 }
 
 .filter .tab-container {
     position: relative;
     width: 100%;
-    max-width: 1265px;
     min-height: 440px;
     padding: 35px;
     background: rgba(0, 0, 0, 0.9);
@@ -946,8 +968,8 @@ a:hover {
 .category {
     position: relative;
     height: auto;
-    /* overflow-x: hidden; */
-    /* overflow-y: visible; */
+    overflow-x: hidden;
+    overflow-y: hidden;
     z-index: 1;
 }
 
@@ -1013,4 +1035,16 @@ a:hover {
     -ms-transition: width 500ms ease-in-out;
     -o-transition: width 500ms ease-in-out;
     transition: width 500ms ease-in-out;
+}
+
+.ads {
+    position: relative;
+    min-height: 810px;
+    background-color: #2C2C2C;
+    background-image: url(../img/index/back3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    margin: 130px 0;
 }
