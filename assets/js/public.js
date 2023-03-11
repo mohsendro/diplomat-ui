@@ -56,146 +56,92 @@ window.onload = function () {
 
 // Swiper Scripts
 var locationSwiper = new Swiper(".locationSwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 4,
+    spaceBetween: 35,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 25,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 35,
+        },
+        1400: {
+            slidesPerView: 4,
+            spaceBetween: 35,
+        },
+    }
 });
 
-
-var sliderSwiper = new Swiper(".sliderSwiper", {
-
+var adsSwiper = new Swiper(".adsSwiper", {
+    slidesPerView: 5,
+    spaceBetween: 25,
+    slidesPerGroup: 1,
+    centeredSlides: true,
+    loop: true,
+    loopFillGroupWithBlank: true,
     pagination: {
         el: ".swiper-pagination",
-        dynamicBullets: true,
+        clickable: true,
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".ads-swiper-button-next",
+        prevEl: ".ads-swiper-button-prev",
     },
-    autoplay: {
-        delay: 8000,
-        disableOnInteraction: false,
-    },
-
-});
-
-var featuresSwiper = new Swiper(".featuresSwiper", {
-
-    slidesPerView: 4,
-    spaceBetween: 30,
-    slidesPerGroup: 1,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    navigation: {
-        nextEl: ".swiper-button-next-features",
-        prevEl: ".swiper-button-prev-features",
-    },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-            // spaceBetween: 20,
-        },
-        576: {
-            slidesPerView: 2,
-            // spaceBetween: 20,
-        },
-        768: {
-            slidesPerView: 3,
-            // spaceBetween: 40,
-        },
-        992: {
-            slidesPerView: 4,
-            // spaceBetween: 50,
-        },
-    }
-
-});
-
-var possibilitiesSwiper = new Swiper(".possibilitiesSwiper", {
-
-    slidesPerView: 4,
-    spaceBetween: 30,
-    slidesPerGroup: 1,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    // navigation: {
-    //   nextEl: ".swiper-button-next-possibilities",
-    //   prevEl: ".swiper-button-prev-possibilities",
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
     // },
-    pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-    },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
     breakpoints: {
         0: {
             slidesPerView: 1,
-            // spaceBetween: 20,
+            spaceBetween: 0,
         },
         576: {
-            slidesPerView: 2,
-            // spaceBetween: 20,
-        },
-        768: {
-            slidesPerView: 3,
-            // spaceBetween: 40,
-        },
-        992: {
-            slidesPerView: 4,
-            // spaceBetween: 50,
-        },
-    }
-
-});
-
-var reviewsSwiper = new Swiper(".reviewsSwiper", {
-
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 1,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    // navigation: {
-    //   nextEl: ".swiper-button-next-possibilities",
-    //   prevEl: ".swiper-button-prev-possibilities",
-    // },
-    pagination: {
-        el: ".swiper-pagination",
-        dynamicBullets: true,
-    },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    breakpoints: {
-        0: {
             slidesPerView: 1,
-            // spaceBetween: 20,
-        },
-        576: {
-            slidesPerView: 2,
-            // spaceBetween: 20,
+            spaceBetween: 0,
         },
         768: {
             slidesPerView: 3,
-            // spaceBetween: 40,
+            spaceBetween: 15,
         },
         992: {
             slidesPerView: 3,
-            // spaceBetween: 50,
+            spaceBetween: 15,
+        },
+        1200: {
+            slidesPerView: 5,
+            spaceBetween: 25,
+        },
+        1400: {
+            slidesPerView: 5,
+            spaceBetween: 25,
         },
     }
-
 });
 
 // Tabs Scripts
