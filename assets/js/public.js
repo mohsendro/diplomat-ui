@@ -144,32 +144,22 @@ var adsSwiper = new Swiper(".adsSwiper", {
     }
 });
 
-// Tabs Scripts
-function openTab(evt, periodName) {
+// Video Scripts
+const video = document.getElementById("video");
+const circlePlayButton = document.getElementById("circle-play-b");
 
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    tablinks = document.getElementsByClassName("tablinks");
-
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+circlePlayButton.addEventListener("click", togglePlay);
+function togglePlay() {
+    if (video.paused || video.ended) {
+        video.play();
+    } else {
+        video.pause();
     }
-
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    document.getElementById(periodName).style.display = "flex";
-    evt.currentTarget.className += " active";
-
 }
 
-// Counter Scripts 
-jQuery(document).ready(function ($) {
-
-    $('.count').counterUp({
-        delay: 10,
-        time: 1000
-    });
-
+video.addEventListener("playing", function () {
+    circlePlayButton.style.opacity = 0;
+});
+video.addEventListener("pause", function () {
+    circlePlayButton.style.opacity = 1;
 });
