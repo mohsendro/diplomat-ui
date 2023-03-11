@@ -922,6 +922,7 @@ a:hover {
 
 .filter .tab-content .tab-column.button-container {
     position: absolute;
+    right: 0;
     bottom: -25px;
     display: flex;
     flex-direction: row;
@@ -1034,7 +1035,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: multiply;
-    padding: 60px;
+    padding: 60px 0 25px 0;
     margin: 130px 0 85px;
 }
 
@@ -1047,7 +1048,7 @@ a:hover {
     align-items: flex-start;
     width: 100%;
     font-family: 'Kalameh';
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 }
 
 .ads .head .title {
@@ -1079,36 +1080,290 @@ a:hover {
     border-radius: 5px;
 }
 
-.ads .swiper {}
+.ads .swiper {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* height: 100%; */
+    padding: 150px 0 50px 0;
+    margin: 0 60px;
+}
 
 .ads .swiper-wrapper {}
 
-.ads .swiper-slide {}
-
-.ads .swiper-slide-active {
-    background: red;
+.ads .swiper-slide {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* min-height: 500px; */
+    border-radius: 5px;
+    background: #ffffff50;
 }
 
-.ads .swiper-slide .card-item {}
+.ads .swiper-slide .card-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: stretch;
+    font-family: 'Kalameh';
+    border-radius: 5px;
+    padding: 0;
+    /* overflow: hidden; */
+}
 
-.ads .swiper-slide .card-item:after {}
+.ads .swiper-slide .card-item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    backdrop-filter: blur(2px);
+    transform: rotate(-180deg);
+    z-index: 1;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
 
-.ads .swiper-slide .card-item:hover:after {}
+.ads .swiper-slide .card-item:hover:after {
+    z-index: -1;
+    opacity: 0;
+}
 
-.ads .swiper-slide .card-item img {}
+.ads .swiper-slide .card-item .title {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
-.ads .swiper-slide .card-item .content {}
+.ads .swiper-slide .card-item .content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 455px;
+    border-radius: 5px;
+    padding: 35px 20px;
+}
 
-.ads .swiper-pagination-bullet {}
+.ads .swiper-slide .card-item .content .back-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 455px;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 5px;
+}
 
-.ads .swiper-pagination-bullet-active {}
+.ads .swiper-slide .card-item .content .info {
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: 'Kalameh';
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid #FFFFFF;
+}
 
+.ads .swiper-slide .card-item .content .info .address {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: right;
+    color: #FFFFFF;
+}
 
+.ads .swiper-slide .card-item .content .info .price {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 85.32%;
+    text-align: right;
+    color: #FFFFFF;
+}
 
+.ads .swiper-slide .card-item .content .details {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+.ads .swiper-slide .card-item .content .details ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    width: 100%;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
 
+.ads .swiper-slide .card-item .content .details ul li {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: right;
+    color: #FFFFFF;
+}
 
+.ads .swiper-slide .card-item .content .details ul li .icon {
+    display: inline-block;
+    width: 100%;
+    max-width: 18px;
+    height: auto;
+}
 
+.ads .swiper-slide .card-item .content .details ul li strong {
+    font-weight: 900;
+}
+
+.ads .swiper-slide-active .card-item .title {
+    top: -50px;
+    font-size: 25px;
+    line-height: 28px;
+}
+
+.ads .swiper-slide-active .card-item {
+    -moz-transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+    -o-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07);
+}
+
+.ads .swiper-slide-active .card-item:after {
+    z-index: -1;
+    opacity: 0;
+}
+
+.ads .more {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.ads .more .btn {
+    width: 120px;
+    font-family: 'Kalameh';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    background-image: url('../img/index/arrow-left.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.ads .more .btn:hover {
+    width: 140px;
+}
+
+.ads .swiper-pagination-bullet {
+    background: #d1d1d1;
+    border-radius: 20px;
+    opacity: 1;
+}
+
+.ads .swiper-pagination-bullet-active {
+    width: 37px;
+    background: #CD9300;
+    border-radius: 20px;
+}
+
+.ads .swiper-rtl .swiper-button-prev:after,
+.ads .swiper-rtl .swiper-button-next:after {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background: #1D2125;
+    border-radius: 50%;
+    vertical-align: middle;
+    line-height: 0;
+    padding: 7px;
+}
+
+.ads .swiper-rtl .swiper-button-prev:hover:after,
+.ads .swiper-rtl .swiper-button-next:hover:after {
+    background: #CD9300;
+}
+
+.ads .swiper-rtl .swiper-button-prev:after {
+    content: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.05364 13.7165L10.1515 14.8144L15.3589 9.60699L10.1515 4.3996L9.05364 5.49744L12.3868 8.83058H4.94409V10.3834H12.3868L9.05364 13.7165Z' fill='%23F6F7F9'/%3E%3C/svg%3E");
+}
+
+.ads .swiper-rtl .swiper-button-next:after {
+    content: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.99588 5.1403L8.08625 4.23066L3.77162 8.54529L8.08625 12.8599L8.99588 11.9503L6.23418 9.1886H12.4009V7.90199L6.23418 7.90199L8.99588 5.1403Z' fill='%23F6F7F9'/%3E%3C/svg%3E");
+}
 
 .location {
     margin-bottom: 100px;

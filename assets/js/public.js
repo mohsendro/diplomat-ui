@@ -112,10 +112,10 @@ var adsSwiper = new Swiper(".adsSwiper", {
         nextEl: ".ads-swiper-button-next",
         prevEl: ".ads-swiper-button-prev",
     },
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     breakpoints: {
         0: {
             slidesPerView: 1,
