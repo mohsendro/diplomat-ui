@@ -147,6 +147,7 @@ var adsSwiper = new Swiper(".adsSwiper", {
 // Video Scripts
 const video = document.getElementById("video");
 const circlePlayButton = document.getElementById("circle-play-b");
+const videoContent = document.getElementById("video-content");
 
 circlePlayButton.addEventListener("click", togglePlay);
 function togglePlay() {
@@ -157,9 +158,15 @@ function togglePlay() {
     }
 }
 
+video.removeAttribute('controls');
 video.addEventListener("playing", function () {
     circlePlayButton.style.opacity = 0;
+    videoContent.style.opacity = 0;
+    video.setAttribute("controls", "true");
+
 });
 video.addEventListener("pause", function () {
     circlePlayButton.style.opacity = 1;
+    videoContent.style.opacity = 1;
+    video.removeAttribute('controls');
 });
