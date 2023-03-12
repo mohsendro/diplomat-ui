@@ -144,6 +144,48 @@ var adsSwiper = new Swiper(".adsSwiper", {
     }
 });
 
+var blogSwiper = new Swiper(".blogSwiper", {
+    slidesPerView: 4,
+    spaceBetween: 15,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+        },
+        1400: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+        },
+    }
+});
+
 // Video Scripts
 const video = document.getElementById("video");
 const circlePlayButton = document.getElementById("circle-play-b");

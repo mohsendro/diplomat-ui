@@ -1646,7 +1646,7 @@ a:hover {
     line-height: 25px;
     text-align: right;
     color: #CD9300;
-    background-image: url('../img/index/btn.circle.svg'), url('../img/index/btn-arrow.svg');
+    background-image: url('../img/index/btn-circle.svg'), url('../img/index/btn-arrow.svg');
     background-position: left center, 15px center;
     background-repeat: no-repeat, no-repeat;
     background-size: auto, auto;
@@ -1660,4 +1660,238 @@ a:hover {
 
 .vip .more .btn:hover {
     background-position: 15px center, 0 center;
+}
+
+.blog {
+    margin-bottom: 125px;
+}
+
+.blog .column {}
+
+.blog .heading {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Kalameh';
+    margin-bottom: 35px;
+}
+
+.blog .heading .title {
+    position: relative;
+    display: block;
+    width: 90%;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 31px;
+    text-align: right;
+    color: #051036;
+    background-image: url("data:image/svg+xml,%3Csvg width='35' height='36' viewBox='0 0 35 36' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.3333 19.9046H23.9583M13.3333 15.4972H23.9583M4.83325 27.6176C4.26967 27.6176 3.72916 27.3854 3.33065 26.9721C2.93214 26.5589 2.70825 25.9983 2.70825 25.4139V12.1917M4.83325 27.6176C5.39684 27.6176 5.93734 27.3854 6.33585 26.9721C6.73437 26.5589 6.95825 25.9983 6.95825 25.4139V8.8861C6.95825 8.59387 7.07019 8.31361 7.26945 8.10698C7.46871 7.90034 7.73896 7.78425 8.02075 7.78425H29.2708C29.5525 7.78425 29.8228 7.90034 30.0221 8.10698C30.2213 8.31361 30.3333 8.59387 30.3333 8.8861V25.4139C30.3333 25.9983 30.1094 26.5589 29.7109 26.9721C29.3123 27.3854 28.7718 27.6176 28.2083 27.6176H4.83325Z' stroke='%23CD9300' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    padding-right: 40px;
+}
+
+.blog .heading .title:before {
+    content: "";
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+    width: calc(100% - 200px);
+    height: 3px;
+    border-bottom: 2px dashed #D2D2D2;
+    border-radius: 5px;
+}
+
+.blog .heading .more {
+    display: block;
+    width: 10%;
+    height: auto;
+    text-align: left;
+}
+
+.blog .heading .more .btn {
+    width: 100%;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5em;
+    text-align: left;
+    color: #919191;
+    background-image: url('../img/index/arrow-left2.svg');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    padding-left: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.blog .heading .more .btn:hover {
+    color: #1D2125;
+}
+
+.blog .swiper {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.blog .swiper-wrapper {}
+
+.blog .swiper-slide {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    min-height: 245px;
+    border-radius: 18px;
+    padding: 0;
+}
+
+.blog .swiper-slide:hover {}
+
+
+.blog .swiper-slide .card-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-start;
+    align-items: stretch;
+    border-radius: 18px;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.blog .swiper-slide .card-item .cover {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+
+.blog .swiper-slide .card-item .cover:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 1.33%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 18px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.blog .swiper-slide .card-item .cover:hover:after {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+}
+
+.blog .swiper-slide .card-item .cover img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 18px;
+    z-index: 0;
+}
+
+.blog .swiper-slide .card-item .title {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 45px;
+    right: 0;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: right;
+    color: #FFFFFF;
+    padding: 10px;
+    z-index: 2;
+}
+
+.blog .swiper-slide .card-item .details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 94.32%;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    z-index: 2;
+}
+
+.blog .swiper-slide .card-item .more {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-align: center;
+    background: rgba(11, 10, 8, 0.5);
+    border-radius: 8px;
+}
+
+.blog .swiper-slide .card-item .more .btn {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: right;
+    color: #FFFFFF;
+    background-image: url('../img/index/btn-circle2.svg'), url('../img/index/btn-arrow2.svg');
+    background-position: 10px center, 15px center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, auto;
+    padding-left: 45px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.blog .swiper-slide .card-item .more .btn:hover {
+    background-position: 15px center, 10px center;
 }
