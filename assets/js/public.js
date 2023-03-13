@@ -186,6 +186,31 @@ var blogSwiper = new Swiper(".blogSwiper", {
     }
 });
 
+var questionSwiper = new Swiper(".questionSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    centeredSlides: true,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".question-swiper-button-next",
+        prevEl: ".question-swiper-button-prev",
+    },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
+    // thumbs: {
+    //     swiper: mySwiper1,
+    // },
+});
+
+
 // Video Scripts
 const video = document.getElementById("video");
 const circlePlayButton = document.getElementById("circle-play-b");
