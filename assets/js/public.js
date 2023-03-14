@@ -190,7 +190,7 @@ var questionSwiper = new Swiper(".questionSwiper", {
     slidesPerView: 1,
     spaceBetween: 0,
     slidesPerGroup: 1,
-    centeredSlides: true,
+    // centeredSlides: true,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
@@ -198,16 +198,40 @@ var questionSwiper = new Swiper(".questionSwiper", {
         clickable: true,
     },
     navigation: {
-        nextEl: ".question-swiper-button-next",
-        prevEl: ".question-swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     // autoplay: {
     //     delay: 2500,
     //     disableOnInteraction: false,
     // },
     // thumbs: {
-    //     swiper: mySwiper1,
+    //     swiper: questionthumbnailSwiper,
     // },
+});
+
+var questionthumbnailSwiper = new Swiper(".questionthumbnailSwiper", {
+    slidesPerView: 4,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    // centeredSlides: true,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
+    thumbs: {
+        swiper: questionSwiper,
+    },
 });
 
 
