@@ -201,10 +201,10 @@ var questionSwiper = new Swiper(".questionSwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     // thumbs: {
     //     swiper: questionthumbnailSwiper,
     // },
@@ -225,15 +225,24 @@ var questionthumbnailSwiper = new Swiper(".questionthumbnailSwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     thumbs: {
         swiper: questionSwiper,
     },
 });
 
+// Counter Scripts 
+// jQuery(document).ready(function ($) {
+
+// $('.count').counterUp({
+// delay: 10,
+// time: 1000
+// });
+
+// });
 
 // Video Scripts
 const video = document.getElementById("video");
