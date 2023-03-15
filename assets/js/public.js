@@ -55,48 +55,6 @@ window.onload = function () {
 }
 
 // Swiper Scripts
-var locationSwiper = new Swiper(".locationSwiper", {
-    slidesPerView: 4,
-    spaceBetween: 35,
-    slidesPerGroup: 1,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-        },
-        576: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-        },
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-        },
-        992: {
-            slidesPerView: 3,
-            spaceBetween: 25,
-        },
-        1200: {
-            slidesPerView: 4,
-            spaceBetween: 35,
-        },
-        1400: {
-            slidesPerView: 4,
-            spaceBetween: 35,
-        },
-    }
-});
-
 var adsSwiper = new Swiper(".adsSwiper", {
     slidesPerView: 5,
     spaceBetween: 25,
@@ -144,6 +102,119 @@ var adsSwiper = new Swiper(".adsSwiper", {
     }
 });
 
+var locationSwiper = new Swiper(".locationSwiper", {
+    slidesPerView: 4,
+    spaceBetween: 35,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 25,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 35,
+        },
+        1400: {
+            slidesPerView: 4,
+            spaceBetween: 35,
+        },
+    }
+});
+
+var vipSwiper = new Swiper(".vipSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    centeredSlides: true,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    effect: "cards",
+    grabCursor: true,
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
+    // navigation: {
+    //     nextEl: ".question-swiper-button-next",
+    //     prevEl: ".question-swiper-button-prev",
+    // },
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
+});
+
+var questionSwiper = new Swiper(".questionSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    // centeredSlides: true,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".question-swiper-button-next",
+        prevEl: ".question-swiper-button-prev",
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    thumbs: {
+        swiper: questionthumbnailSwiper,
+    },
+});
+
+var questionthumbnailSwiper = new Swiper(".questionthumbnailSwiper", {
+    slidesPerView: 4,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    // centeredSlides: true,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    // pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    // },
+    navigation: {
+        nextEl: ".questionthumbnail-swiper-button-next",
+        prevEl: ".questionthumbnail-swiper-button-prev",
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    thumbs: {
+        swiper: questionSwiper,
+    },
+});
+
 var blogSwiper = new Swiper(".blogSwiper", {
     slidesPerView: 4,
     spaceBetween: 15,
@@ -184,54 +255,6 @@ var blogSwiper = new Swiper(".blogSwiper", {
             spaceBetween: 15,
         },
     }
-});
-
-var questionSwiper = new Swiper(".questionSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    slidesPerGroup: 1,
-    // centeredSlides: true,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    // thumbs: {
-    //     swiper: questionthumbnailSwiper,
-    // },
-});
-
-var questionthumbnailSwiper = new Swiper(".questionthumbnailSwiper", {
-    slidesPerView: 4,
-    spaceBetween: 0,
-    slidesPerGroup: 1,
-    // centeredSlides: true,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    // pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    // },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    thumbs: {
-        swiper: questionSwiper,
-    },
 });
 
 // Counter Scripts 

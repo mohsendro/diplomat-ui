@@ -379,6 +379,7 @@ a:hover {
     background-repeat: no-repeat, no-repeat;
     background-size: 650px auto, 450px auto;
     padding: 70px 0 280px;
+    margin-top: -140px;
     margin-bottom: -100px;
     overflow-x: hidden;
 }
@@ -2464,4 +2465,75 @@ a:hover {
 
 .blog .swiper-slide .card-item .more .btn:hover {
     background-position: 15px center, 10px center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.vip .swiper-slide:nth-child(1n) {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(206, 17, 17);
+}
+
+.vip .swiper-slide:nth-child(2n) {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(0, 140, 255);
+}
+
+.vip .swiper-slide:nth-child(3n) {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(10, 184, 111);
+}
+
+.vip .swiper-slide:nth-child(4n) {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(211, 122, 7);
+}
+
+.vip .swiper-slide:nth-child(5n) {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(118, 163, 12);
+}
+
+.vip .swiper-slide:nth-child(6n) {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(180, 10, 47);
+}
+
+.vip .swiper-slide:nth-child(7n) {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(35, 99, 19);
+}
+
+.vip .swiper-slide:nth-child(8n) {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(0, 68, 255);
+}
+
+.vip .swiper-slide:nth-child(9n) {
+    width: 100%;
+    height: auto;
+    background-color: rgb(218, 12, 218);
+}
+
+.vip .swiper-slide:nth-child(10n) {
+    width: 100%;
+    height: auto;
+    background-color: rgb(54, 94, 77);
 }
