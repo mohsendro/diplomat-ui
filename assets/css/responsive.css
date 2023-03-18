@@ -24,6 +24,18 @@
         justify-content: flex-start;
     }
 
+    .filter .tab-content .tab-column #form-input {
+        width: calc(100% - 25px) !important;
+    }
+
+    .filter .range-slider {
+        width: 100%;
+    }
+
+    .filter .range-slider input {
+        width: 100%;
+    }
+
     .category .cat-container {
         justify-content: center;
     }
@@ -33,9 +45,14 @@
         width: calc(100% - 20px);
     }
 
+    .vip .row {
+        gap: 30px;
+    }
+
     .question .swiper-slide .card-item {
         flex-direction: column;
         flex-wrap: wrap;
+        gap: 30px;
     }
 
     .question .swiper-slide .card-item .information {
@@ -90,6 +107,18 @@
         justify-content: flex-start;
     }
 
+    .filter .tab-content .tab-column #form-input {
+        width: calc(100% - 25px) !important;
+    }
+
+    .filter .range-slider {
+        width: 100%;
+    }
+
+    .filter .range-slider input {
+        width: 100%;
+    }
+
     .category .cat-container {
         justify-content: center;
     }
@@ -99,9 +128,14 @@
         width: calc(100% - 20px);
     }
 
+    .vip .row {
+        gap: 30px;
+    }
+
     .question .swiper-slide .card-item {
         flex-direction: column;
         flex-wrap: wrap;
+        gap: 30px;
     }
 
     .question .swiper-slide .card-item .information {
@@ -156,14 +190,31 @@
         justify-content: flex-start;
     }
 
+    .filter .tab-content .tab-column #form-input {
+        width: calc(100% - 75px) !important;
+    }
+
+    .filter .range-slider {
+        width: 100%;
+    }
+
+    .filter .range-slider input {
+        width: 100%;
+    }
+
     .category .card-item {
         position: relative;
         width: calc(50% - 20px);
     }
 
+    .vip .row {
+        gap: 30px;
+    }
+
     .question .swiper-slide .card-item {
         flex-direction: column;
         flex-wrap: wrap;
+        gap: 30px;
     }
 
     .question .swiper-slide .card-item .information {
@@ -218,14 +269,31 @@
         justify-content: flex-start;
     }
 
+    .filter .tab-content .tab-column #form-input {
+        width: calc(100% - 75px) !important;
+    }
+
+    .filter .range-slider {
+        width: 100%;
+    }
+
+    .filter .range-slider input {
+        width: 100%;
+    }
+
     .category .card-item {
         position: relative;
         width: calc(50% - 20px);
     }
 
+    .vip .row {
+        gap: 30px;
+    }
+
     .question .swiper-slide .card-item {
         flex-direction: column;
         flex-wrap: wrap;
+        gap: 30px;
     }
 
     .question .swiper-slide .card-item .information {

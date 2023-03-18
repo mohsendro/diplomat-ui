@@ -409,6 +409,11 @@ a:hover {
     min-height: 80px;
 }
 
+.filter .tabs::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
 .filter .tabs .tab-item button {
     width: auto;
     min-width: max-content;
