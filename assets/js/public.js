@@ -213,6 +213,32 @@ var questionthumbnailSwiper = new Swiper(".questionthumbnailSwiper", {
     thumbs: {
         swiper: questionSwiper,
     },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+        },
+        1400: {
+            slidesPerView: 4,
+            spaceBetween: 15,
+        },
+    }
 });
 
 var blogSwiper = new Swiper(".blogSwiper", {

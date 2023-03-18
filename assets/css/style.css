@@ -405,8 +405,13 @@ a:hover {
     justify-content: center;
     align-items: flex-start;
     gap: 30px;
-    overflow-x: hidden;
+    overflow-x: scroll;
     min-height: 80px;
+}
+
+.filter .tabs .tab-item button {
+    width: auto;
+    min-width: max-content;
 }
 
 .filter .tabs .tab-item button {
