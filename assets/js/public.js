@@ -23,7 +23,7 @@ window.onload = function () {
     };
 
     function scrollFunction() {
-        if (window.matchMedia('screen and (min-width: 992px)').matches) {
+        if (window.matchMedia('screen and (min-width: 1400px)').matches) {
 
             if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
 
@@ -273,10 +273,6 @@ function vipVideo($number) {
     const video = document.getElementById("video-vip" + [$number]);
     const circlePlayButton = document.getElementById("circle-play-b" + [$number]);
     const videoContent = document.getElementById("video-content" + [$number]);
-
-    // const video = document.getElementById("video");
-    // const circlePlayButton = document.getElementById("circle-play-b");
-    // const videoContent = document.getElementById("video-content");
 
     // circlePlayButton.addEventListener("click", togglePlay);
     // function togglePlay() {

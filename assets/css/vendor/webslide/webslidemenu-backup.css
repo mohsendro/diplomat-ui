@@ -708,7 +708,7 @@ video {
 |  03 Tab CSS
 --------------------------------------------------------------------------*/
 
-/* @media only screen and (min-width: 576px) and (max-width: 767.98px) {
+/* @media only screen and (min-width:780px) and (max-width:991.98px) {
 	.wsmenu-list>li>a>.fa {
 		display: none !important;
 	}
@@ -738,7 +738,7 @@ video {
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+@media only screen and (min-width: 781px) and (max-width:991.98px) {
 	.wsmenu-list li a .arrow:after {
 		display: none !important;
 	}
@@ -767,7 +767,7 @@ video {
 |  04 Mobile CSS
 --------------------------------------------------------------------------*/
 
-@media only screen and (max-width: 1399.98px) {
+@media only screen and (max-width: 991.98px) {
 	.wsoffcanvasopener .wsmenu {
 		right: 0px;
 		-webkit-transition: all 0.4s ease-in-out;
