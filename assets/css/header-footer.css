@@ -80,26 +80,6 @@
     padding: 9px 17px 9px 32px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .header .daily-ads {
     display: inline-block;
     width: auto;
@@ -127,7 +107,7 @@
 }
 
 .header .search {
-    display: inline-block;
+    display: none;
     width: 100%;
     min-width: 210px;
     font-family: 'Kalameh';
@@ -578,6 +558,14 @@
 /* Responsive footer */
 @media (max-width: 575.98px) {
 
+    .header .daily-ads {
+        display: none;
+    }
+
+    .header .profile {
+        border-right: 0;
+    }
+
     .footer .column {
         padding-right: 0 !important;
     }
@@ -638,6 +626,10 @@
 
 @media (min-width: 1200px) and (max-width: 1399.98px) {
 
+    .header .search {
+        display: inline-block;
+    }
+
     .footer .column {
         padding-right: 0 !important;
     }
@@ -650,6 +642,10 @@
 
 
 @media (min-width: 1400px) {
+
+    .header .search {
+        display: inline-block;
+    }
 
     .header-logo {
         display: block;
